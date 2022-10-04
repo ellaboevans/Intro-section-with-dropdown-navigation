@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="./images/logo.svg" alt="logo" class="logo" />
+
+        <nav class="myNav">
+          <ul class="navMenu">
+            <div class="dropdown">
+              <a href="#" class="dropdown_link">Features</a>
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt=""
+                class="dropdown_link"
+              />
+              <div class="dropdown-content">
+                <div class="content-item">
+                  <img src="./images/icon-todo.svg" alt="" />
+                  <a href="#" class="navLink">Todo List</a>
+                </div>
+                <div class="content-item">
+                  <img src="./images/icon-calendar.svg" alt="" />
+                  <a href="#" class="navLink">Calender</a>
+                </div>
+                <div class="content-item">
+                  <img src="./images/icon-reminders.svg" alt="" />
+                  <a href="#" class="navLink">Reminders</a>
+                </div>
+                <div class="content-item">
+                  <img src="./images/icon-planning.svg" alt="" />
+                  <a href="#" class="navLink">Planning</a>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="#" class="dropdown_link">Company</a>
+              <img
+                src="./images/icon-arrow-down.svg"
+                class="dropdown_link"
+                alt=""
+              />
+              <div class="dropdown-content company">
+                <a href="#" class="navLink">History</a>
+                <a href="#" class="navLink">Our Team</a>
+                <a href="#" class="navLink">Blog</a>
+              </div>
+            </div>
+            <li><a href="#" class="navLink">Careers</a></li>
+            <li><a href="#" class="navLink">About</a></li>
+          </ul>
+          <div class="myNav-rt">
+            <a href="#" class="login" class="navLink">Login</a>
+            <a href="#" class="navLink"
+              ><button type="submit" class="register">Register</button></a
+            >
+          </div>
+          
+        </nav>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </header>
+    <div class="hero">
+      <div class="hero-info">
+        <div class="hero-text">
+          <h1>Make remote work</h1>
+        </div>
+        <div class="hero-paragraph">
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+        </div>
+        <a href="#"
+          ><button type="submit" class="hero-btn">Learn More</button></a
+        >
+        <div class="hero-client">
+          <img
+            src="./images/client-databiz.svg"
+            alt=""
+            class="client"
+            width="90"
+          />
+          <img
+            src="./images/client-audiophile.svg"
+            alt=""
+            class="client"
+            width="50"
+          />
+
+          <img
+            src="./images/client-meet.svg"
+            alt=""
+            class="client"
+            width="70"
+          />
+          <img
+            src="./images/client-maker.svg"
+            alt=""
+            class="client"
+            width="60"
+          />
+        </div>
+      </div>
+      <div class="hero-image-right">
+        <div class="hero-image">
+          <picture>
+            <source
+              media="(max-width:650px)"
+              srcset="./images/image-hero-mobile.png"
+            />
+            <img src="./images/image-hero-desktop.png" alt="" width="350" />
+          </picture>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

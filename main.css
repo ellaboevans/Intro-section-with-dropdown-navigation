@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+  outline: 1px dotted springgreen;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+  width: 100vw;
+}
+.container {
+  display: flex;
+  width: 90vw;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin: 0 auto;
+  padding: 1rem;
+}
+.myNav {
+  width: 80vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  float: left;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.myNav ul {
+  display: inline-flex;
+  gap: 1rem;
+  margin-left: 1.5rem;
+  list-style: none;
+}
+
+.myNav li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  font-size: 14px;
+}
+
+.myNav li a:hover {
+  color: hsl(0, 0%, 8%);
+  transition: 0.4s ease all;
+}
+.myNav-rt a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  margin-left: 1rem;
+  font-size: 14px;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown:hover .dropdown_link {
+  color: hsl(0, 0%, 8%);
+  transition: 0.4s ease all;
+  transform: rotate(-180deg);
+}
+
+.dropdown .dropdown_link {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  font-size: 14px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: hsl(0, 0%, 98%);
+  min-width: 100px;
+  z-index: 1;
+  border-radius: 10px;
+  padding: 0.4rem 1.2rem;
+  margin-top: 0.8rem;
+  margin-left: -4rem;
+  box-shadow: 0px 0px 32px 3px rgba(0, 0, 0, 0.29);
+}
+
+.dropdown-content a {
+  float: none;
+  color: hsl(0, 0%, 41%);
+  padding: 0.1rem 1rem;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.dropdown-content a:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.content-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.company {
+  margin-left: 0rem;
+}
+
+.company a {
+  display: block;
+  padding: 0.5rem 0 0.5rem 1rem;
+  text-align: left;
+}
+.login {
+  margin-right: 0.1rem;
+}
+.login:hover {
+  color: hsl(0, 0%, 8%);
+  transition: 0.4s ease all;
+}
+
+.register {
+  padding: 0.7rem 1rem;
+  outline: 1.2px solid hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 41%);
+  background-color: hsl(0, 0%, 98%);
+  border: none;
+}
+
+.register:hover {
+  color: hsl(0, 0%, 8%);
+  outline: 1px solid hsl(0, 0%, 8%);
+  transition: 0.4s ease all;
+}
+
+button {
+  border: none;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.hero {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.hero-info {
+  margin-top: 3rem;
+}
+
+.hero-text h1 {
+  color: hsl(0, 0%, 8%);
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  margin-right: 9rem;
+  margin-top: 2rem;
+  line-height: 4rem;
+}
+
+.hero-paragraph p {
+  color: hsl(0, 0%, 41%);
+  padding: 0 20rem 0 0;
+  font-size: 15px;
+  margin-bottom: 2.4rem;
+  line-height: 1.5rem;
+}
+
+.hero-btn {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.hero-btn:hover {
+  color: hsl(0, 0%, 8%);
+  outline: 1px solid hsl(0, 0%, 8%);
+  transition: 0.4s ease all;
+  background-color: hsl(0, 0%, 98%);
+}
+.hero-client {
+  /* width: 50vw; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.client {
+  margin-top: 1rem;
+}
+
+.hero-image {
+  padding: 2rem 0;
+  /* margin-left: -2rem; */
+  object-fit: cover;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: 0.3s ease-in-out all;
+  background-color: hsl(0, 0%, 8%);
+}
+
+@media (max-width: 375px) {
+  body {
+    width: 100vw;
+  }
+
+  .container {
+    width: 95vw;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    margin-right: 10rem;
+  }
+ .myNav .myNav-rt{
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2.5rem;
+}
+.myNav ul {
+  gap: 2rem;
+  margin-left: -5.5rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: hsl(0, 0%, 98%);
+  padding: 0.4rem 1.2rem;
+  margin-top: 0.8rem;
+  margin-left: 0rem;
+  box-shadow: none;
+}
+
+.myNav .myNav-rt .login{
+  margin-bottom: 1rem;
+  margin-top: -20rem;
+
+}
+.myNav-rt a{
+  font-size: 18px;
+}
+.register {
+  padding: 0.7rem 3rem;
+  font-size: 18px;
+  
+}
+  .myNav .navMenu{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 2rem 0;
+    font-size: 18px;
+  }
+
+  .myNav .navMenu a{
+    font-size: 18px;
+    text-align: left;
+  }
+  .myNav {
+    position: fixed;
+    right:-100%;
+    top: 0rem;
+    flex-direction: column;
+    background: hsl(0, 0%, 98%);
+    width: 50%;
+    height: 100vh;
+    margin-right: 6rem;
+    border: 5px;
+    transition: 0.4s ease-in-out all;
+    box-shadow: -50px -8px 50px 50px rgba(0,0,0,0.5);
+}
+
+  .myNav.active{
+    right: 0;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-info {
+    margin-top: 1.5rem;
+  }
+  .hero-text {
+    margin-right: 1.2rem;
+  }
+
+  .hero-text h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 1.7rem;
+    margin-top: -2.5rem;
+    margin-right: -10rem;
+    margin-left: -10rem;
+  }
+  .hero-image {
+    margin-right: 2.5rem;
+    margin-top: -2rem;
+    order: 1;
+  }
+
+  .hero-paragraph p {
+    margin-right: -1rem;
+    margin-left: -3rem;
+    margin-top: -1rem;
+    text-align: center;
+    padding: 0;
+    order: 3;
+  }
+
+  .hero-btn {
+    margin-left: 3.5rem;
+    margin-top: -1.5rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .hero-client {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .client {
+    margin-top: -1rem;
+    margin-right: -2rem;
+    margin-left: 1.5rem;
+    gap: 1rem;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-left: 1.5rem;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .attribution {
+    display: none;
+  }
+}
