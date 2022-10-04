@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Frontend Mentor | Product Previw Card](https://product-card-preview-html-css.netlify.app)
+- Live Site URL: [Frontend Mentor | Intro section with dropdown navigation](https://intro-dropdown-navigations.netlify.app/)
 
 ## My process
 
