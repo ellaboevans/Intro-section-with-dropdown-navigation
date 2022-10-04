@@ -16,7 +16,7 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
 
@@ -62,6 +62,7 @@ I will continue to build more complex project to enhance my tech stack.
 
 - [W3schools](https://www.w3schools.com) - This website helped me understand the basic use of padding and Media Queries
 - [DEV](https://dev.to) - This webiste helped me to set up the mobile menu from zero to completion.
+- [CSS-tricks](https://css-tricks.com) - This website helped me to use flexbox to set up my project. 
 
 
 
@@ -74,6 +75,6 @@ I will continue to build more complex project to enhance my tech stack.
 
 ## Acknowledgments
 
-Thanks to all web developers on Youtube who share such wonderful resources and also to frontend mentor for providing such challenging exercise to improve ones styling skills. Cheers!
+I am very grateful to have access to articles, stack overflow, and many more on the internet. I would like to thank each and everyone who has contributed to help us gain knowledge in whatever we do with the web.
 
 
