@@ -5,7 +5,7 @@
   box-sizing: border-box;
   padding: 0;
   font-family: "Epilogue", sans-serif;
-  outline: 1px dotted springgreen;
+  /* outline: 1px dotted springgreen; */
 }
 
 .attribution {
